@@ -304,3 +304,8 @@ void Board::ComputerTurn()
 
 	std::cout << "COMPUTER CHOOSES: " << x << y << std::endl;
 }
+
+std::string Board::GetPlayer()
+{
+	return player_choice;
+}

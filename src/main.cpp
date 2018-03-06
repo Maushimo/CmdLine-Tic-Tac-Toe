@@ -29,7 +29,8 @@ int main(int argc, char const *argv[])
 		
 		//std::cout << "Player is: " << board->GetPlayer() << std::endl;
 		board->DrawBoard();
-		std::cout << "Space Input\n";
+		std::cout << "\n";
+		std::cout << "Input the space you wish to place your " << board->GetPlayer() << std::endl;
 		std::cin >> player_input;
 
 		board->InputChar(player_input);
@@ -41,6 +42,7 @@ int main(int argc, char const *argv[])
 		{
 			CurrentGameState = GAME_STATES::WIN;
 		}
+
 		if(board->ComputerWin())
 		{
 			CurrentGameState = GAME_STATES::LOSE;

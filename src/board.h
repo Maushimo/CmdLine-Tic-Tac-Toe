@@ -21,6 +21,8 @@ public:
 	bool ComputerWin();
 	//method to process computer turns
 	void ComputerTurn();
+	//return player selection
+	std::string GetPlayer();
 private:
 	//2D int array representing board - 0 = empty, 1 = 'x', 2 = 'o'
 	std::vector<std::vector<space_value>> mBoard;
